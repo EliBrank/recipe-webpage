@@ -49,7 +49,7 @@ svg.lucide {
 
 /* HEADER */
 .hero {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--color-primary-light);
   background-image: url("/images/cover.jpg");
@@ -63,6 +63,7 @@ svg.lucide {
   display: flex;
   flex-direction: column;
   gap: 8rem;
+  padding-inline: 0;
 }
 
 .header-nav {
@@ -83,7 +84,7 @@ svg.lucide {
 
 .title-options {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
 
 .proportions-toggle {
@@ -99,16 +100,13 @@ svg.lucide {
 
 
 /* MAIN SECTION */
-main .wrapper {
-  background: var(--color-primary-light);
-}
-
 .recipe {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 4rem;
   padding: 2rem;
   margin-block: 2rem;
+  background: var(--color-primary-light);
 }
 
 .section-title {
@@ -120,7 +118,7 @@ main .wrapper {
 }
 
 input[type="checkbox"] {
-  accent-color: var(--color-primary-light);
+  accent-color: var(--color-secondary);
   cursor: pointer;
 }
 
@@ -136,7 +134,7 @@ input[type="checkbox"] {
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .step-number {
