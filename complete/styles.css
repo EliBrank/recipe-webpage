@@ -1,0 +1,164 @@
+/* VARIABLES */
+:root {
+  --color-primary-dark: #2C342E;
+  --color-primary-light: #FFF7E9;
+  --color-secondary: #7E8D85;
+}
+
+
+
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+
+body {
+  background-color: var(--color-primary-dark);
+  font-size: 1.5rem;
+  font-family: "Playfair", serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding-inline: 2rem;
+  margin-inline: auto
+}
+
+svg.lucide {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
+/* HEADER */
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-primary-light);
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--color-primary-light);
+}
+
+.hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons i {
+  width: 2rem;
+  height: 2rem;
+}
+
+.title-options {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.proportions-toggle {
+  justify-self: end;
+  align-self: end;
+  text-align: right;
+  padding-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+
+/* MAIN SECTION */
+main .wrapper {
+  background: var(--color-primary-light);
+}
+
+.recipe {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  padding: 2rem;
+  margin-block: 2rem;
+}
+
+.section-title {
+  font-family: "Inter", sans-serif;
+  color: var(--color-secondary);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+
+
+/* COOKING INSTRUCTIONS */
+.instructions {
+  padding: 2rem;
+}
+
+.step-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.step p {
+  padding-left: 2rem;
+}
+
+
+
+/* INGREDIENTS LIST */
+.ingredients-wrapper {
+  border: 2px solid var(--color-secondary);
+  padding: 2rem;
+}
+
+.ingredients ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
